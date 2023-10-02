@@ -1,10 +1,8 @@
-with open(r"_chat.txt", 'r') as fp:
+with open("_chat.txt", 'r', encoding='utf-8') as fp:
     text = fp.readlines()
-    lines = len(text)
-    pollcount =0
+    excite =0
     for eachline in text:
-        if 'POLL' in eachline:
-            pollcount=pollcount+1
-    print('Total Number of lines:', lines)
-    print('Total polls: '+str(pollcount))
+        if ':)' in eachline:
+            excite=excite+1
+    print(' Admin Sir!! Sapiens ungala ethana times excite aagaa vachirukanga :' +str(excite))
     
